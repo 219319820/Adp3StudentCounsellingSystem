@@ -4,7 +4,7 @@
  *  Date: 9 June 2021
  */
 
-package za.ac.cput.entity.generic;
+package za.ac.cput.entity;
 
 public class UserRole {
     private int userId,roleId;

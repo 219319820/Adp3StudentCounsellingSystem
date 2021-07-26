@@ -3,7 +3,7 @@ package za.ac.cput.factory;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-import za.ac.cput.entity.generic.BookingStatus;
+import za.ac.cput.entity.BookingStatus;
 
 import static org.junit.Assert.*;
 

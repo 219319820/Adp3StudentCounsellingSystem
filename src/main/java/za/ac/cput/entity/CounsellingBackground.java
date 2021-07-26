@@ -1,4 +1,4 @@
-package za.ac.cput.entity.generic;
+package za.ac.cput.entity;
 /*Entity for CounsellingBackground;
 Author :Justin Nkuna(219319820)
 Date:10 June 2021

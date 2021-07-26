@@ -4,10 +4,10 @@
  Date: 9 June 2021
  */
 
-package za.ac.cput.factory.generic;
+package za.ac.cput.factory;
 
 import za.ac.cput.Util.GenericHelper;
-import za.ac.cput.entity.generic.BookingHistory;
+import za.ac.cput.entity.BookingHistory;
 
  public class BookingHistoryFactory {
 

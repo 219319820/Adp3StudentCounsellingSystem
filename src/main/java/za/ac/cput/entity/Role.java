@@ -3,7 +3,7 @@
         *  Author: Vuyisa Nkangana(218192215)
         *  Date: 11 June 2021
         */
-package za.ac.cput.entity.generic;
+package za.ac.cput.entity;
 
 public class Role {
     private int userId;

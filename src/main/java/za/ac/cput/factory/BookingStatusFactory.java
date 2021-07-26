@@ -1,6 +1,6 @@
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.generic.BookingStatus;
+import za.ac.cput.entity.BookingStatus;
 
 /**BookingStatusFactory.java
  * Factory for the Booking Status

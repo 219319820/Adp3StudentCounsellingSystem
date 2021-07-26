@@ -6,7 +6,7 @@ package za.ac.cput.factory;
  Date:
 */
 
-import za.ac.cput.entity.user.User;
+import za.ac.cput.entity.User;
 
 import java.util.Date;
 import java.util.UUID;

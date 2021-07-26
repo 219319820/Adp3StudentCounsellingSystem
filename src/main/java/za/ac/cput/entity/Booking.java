@@ -1,10 +1,5 @@
-package za.ac.cput.entity.generic;
+package za.ac.cput.entity;
 
-
-
-
-import java.sql.Time;
-import java.util.Date;
 
 /**Booking.java
  * Entity for Booking a counselling session

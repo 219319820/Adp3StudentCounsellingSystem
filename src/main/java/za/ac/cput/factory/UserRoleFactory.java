@@ -7,7 +7,7 @@
 package za.ac.cput.factory;
 
 import za.ac.cput.Util.GenericHelper;
-import za.ac.cput.entity.generic.UserRole;
+import za.ac.cput.entity.UserRole;
 
 public class UserRoleFactory {
     public static UserRole createUserRole(int userId, int userRole){

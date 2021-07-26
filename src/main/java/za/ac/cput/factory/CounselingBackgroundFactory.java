@@ -1,12 +1,11 @@
-package za.ac.cput.factory.generic;
+package za.ac.cput.factory;
 
 /*Factory for CounsellingBackground
 Author :Justin Nkuna(219319820)
 Date:11 June 2021
  */
 
-import za.ac.cput.entity.generic.CounsellingBackground;
-import za.ac.cput.entity.generic.MentalHealth;
+import za.ac.cput.entity.CounsellingBackground;
 
 import java.util.Date;
 

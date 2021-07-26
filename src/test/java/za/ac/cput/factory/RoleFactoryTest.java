@@ -1,8 +1,8 @@
-package za.ac.cput.factory.generic;
+package za.ac.cput.factory;
 
 import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
-import za.ac.cput.entity.generic.Role;
+import za.ac.cput.entity.Role;
 
 import static org.junit.Assert.*;
 

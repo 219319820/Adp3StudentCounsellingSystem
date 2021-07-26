@@ -1,4 +1,4 @@
-package za.ac.cput.entity.generic;
+package za.ac.cput.entity;
 
 /* Author : Okuhle Ndlebe
     Date : 11/06/2021
@@ -51,7 +51,7 @@ public class CounsellorSpecialization {
             this.specialityID = specialityID;
             return this;
         }
-        public Builder copy(za.ac.cput.entity.generic.CounsellorSpecialization counsellorSpecialization){
+        public Builder copy(CounsellorSpecialization counsellorSpecialization){
             this.userID = counsellorSpecialization.userID;
             this.specialityID = counsellorSpecialization.specialityID;
             return this;

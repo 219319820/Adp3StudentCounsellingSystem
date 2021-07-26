@@ -8,8 +8,7 @@ package za.ac.cput.factory;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Disabled;
-import za.ac.cput.entity.generic.ContactType;
-import za.ac.cput.factory.generic.ContactTypeFactory;
+import za.ac.cput.entity.ContactType;
 
 import static org.junit.Assert.*;
 

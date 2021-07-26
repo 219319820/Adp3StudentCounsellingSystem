@@ -5,7 +5,7 @@
         */
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.generic.Role;
+import za.ac.cput.entity.Role;
 
 public class RoleFactory {
     public static Role createRole(int userId, int roleId, String roleName, String roleDescription){

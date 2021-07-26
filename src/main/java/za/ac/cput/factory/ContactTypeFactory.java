@@ -4,8 +4,8 @@
  Date: 9 June 2021
  */
 
-package za.ac.cput.factory.generic;
-import za.ac.cput.entity.generic.ContactType;
+package za.ac.cput.factory;
+import za.ac.cput.entity.ContactType;
 
 public class ContactTypeFactory {
 

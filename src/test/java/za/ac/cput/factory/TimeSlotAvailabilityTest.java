@@ -2,7 +2,7 @@ package za.ac.cput.factory;
 
 import org.junit.Ignore;
 import org.junit.Test;
-import za.ac.cput.entity.generic.TimeSlotAvailability;
+import za.ac.cput.entity.TimeSlotAvailability;
 
 import static org.junit.Assert.*;
 

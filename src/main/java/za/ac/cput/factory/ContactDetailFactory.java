@@ -4,9 +4,9 @@
  Date: 9 June 2021
  */
 
-package za.ac.cput.factory.generic;
+package za.ac.cput.factory;
 
-import za.ac.cput.entity.generic.ContactDetail;
+import za.ac.cput.entity.ContactDetail;
 public class ContactDetailFactory {
 
     public static ContactDetail createContactDetail(String emailAddress, int phoneNumber) {

@@ -1,4 +1,4 @@
-package za.ac.cput.entity.generic;
+package za.ac.cput.entity;
 
 /*Entity for MemtalHealth
 Author :Justin Nkuna(219319820)

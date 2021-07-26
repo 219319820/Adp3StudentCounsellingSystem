@@ -8,9 +8,8 @@
 package za.ac.cput.factory;
 import org.junit.Test;
 import org.junit.jupiter.api.Disabled;
-import za.ac.cput.entity.generic.BookingHistory;
-import za.ac.cput.entity.generic.ContactDetail;
-import za.ac.cput.factory.generic.BookingHistoryFactory;
+import za.ac.cput.entity.BookingHistory;
+import za.ac.cput.entity.ContactDetail;
 
 
 import static org.junit.Assert.*;

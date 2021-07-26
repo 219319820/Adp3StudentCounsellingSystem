@@ -1,14 +1,11 @@
-package za.ac.cput.factory.generic;
+package za.ac.cput.factory;
 
 /*Factory for MemtalHealth
 Author :Justin Nkuna(219319820)
 Date:11 June 2021
  */
 
-import za.ac.cput.entity.generic.MentalHealth;
-
-import javax.swing.plaf.basic.BasicMenuUI;
-import java.util.UUID;
+import za.ac.cput.entity.MentalHealth;
 
 public class MentalHealthFactory {
 

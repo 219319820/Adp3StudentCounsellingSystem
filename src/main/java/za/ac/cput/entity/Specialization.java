@@ -1,4 +1,4 @@
-package za.ac.cput.entity.generic;
+package za.ac.cput.entity;
 
 import java.util.Objects;
 
@@ -57,7 +57,7 @@ public class Specialization  {
             this.specialityDecr = specialityDecr;
             return this;
         }
-        public Builder copy(za.ac.cput.entity.generic.Specialization specialization){
+        public Builder copy(Specialization specialization){
             this.specialityID = specialization.specialityID;
             this.specialityName = specialization.specialityName;
             this.specialityDecr = specialization.specialityDecr;
