@@ -7,12 +7,10 @@ Date:11 June 2021
 
 import za.ac.cput.entity.CounsellingBackground;
 
-import java.util.Date;
-
 public class CounselingBackgroundFactory {
 
-    public static CounsellingBackground createCounselingBackground( int counselingBackgroundId, String counsellorFirstName,String counsellorLastName,
-                                                                    int counsellorPhoneNumber,Date counsellingDate,String counsellingDuration,String treatmentTaken)
+    public static CounsellingBackground createCounselingBackground(int counselingBackgroundId, String counsellorFirstName, String counsellorLastName,
+                                                                   int counsellorPhoneNumber, String counsellingDate, String counsellingDuration, String treatmentTaken)
 
 
     {

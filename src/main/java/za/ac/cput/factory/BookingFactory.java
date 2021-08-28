@@ -2,7 +2,7 @@ package za.ac.cput.factory;
 
 import za.ac.cput.Util.GenericHelper;
 import za.ac.cput.entity.Booking;
-import za.ac.cput.entity.generic.Booking;
+import za.ac.cput.entity.Booking;
 
 /**BookingFactory.java
  * Factory for BookingStatus
