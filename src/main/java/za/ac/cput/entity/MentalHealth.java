@@ -1,6 +1,6 @@
 package za.ac.cput.entity;
 
-/*Entity for MemtalHealth
+/**Entity for MemtalHealth
 Author :Justin Nkuna(219319820)
 Date:10 June 2021
  */
@@ -8,29 +8,23 @@ Date:10 June 2021
 public class MentalHealth {
 
 
-    private int userId;
-    private String disorderName;
-    private String disorderDesc;
-    private int counsellingBackgroundId;
+    int userId;
+    String disorderName;
+    String disorderDesc;
+    int counsellingBackgroundId;
 
     //creating the builder pattern for Mental health
 
-    private   MentalHealth(Builder builder) {
+    public MentalHealth(Builder builder) {
 
-         this.userId=builder.userId;
-         this.disorderName= builder.disorderName;
-         this.disorderDesc=builder.disorderDesc;
-         this.counsellingBackgroundId=builder.counsellingBackgroundId;
+        this.userId=builder.userId;
+        this.disorderName= builder.disorderName;
+        this.disorderDesc=builder.disorderDesc;
+        this.counsellingBackgroundId=builder.counsellingBackgroundId;
     }
-//The toString method to return values
 
-    private MentalHealth(Builder builder) {
 
-        this.userId = builder.userId;
-        this.disorderName = builder.disorderName;
-        this.disorderDesc = builder.disorderDesc;
-        this.counsellingBackgroundId = builder.counsellingBackgroundId;
-    }
+
 
     //The toString method to return values
 
@@ -88,17 +82,10 @@ public class MentalHealth {
 
         public  Builder copy(MentalHealth mentalHealth){
 
-             this.userId= mentalHealth.userId;
-             this.disorderName=mentalHealth.disorderName;
-             this.disorderDesc=mentalHealth.disorderDesc;
-             this.counsellingBackgroundId= mentalHealth.counsellingBackgroundId;
-
-        public Builder copy(MentalHealth mentalHealth) {
-
-            this.userId = mentalHealth.userId;
-            this.disorderName = mentalHealth.disorderName;
-            this.disorderDesc = mentalHealth.disorderDesc;
-            this.counsellingBackgroundId = mentalHealth.counsellingBackgroundId;
+            this.userId= mentalHealth.userId;
+            this.disorderName=mentalHealth.disorderName;
+            this.disorderDesc=mentalHealth.disorderDesc;
+            this.counsellingBackgroundId= mentalHealth.counsellingBackgroundId;
 
 
             return this;
@@ -111,18 +98,4 @@ public class MentalHealth {
 
     }
 
-    }
 }
-
-
-
-
-
-
-
-
-}
-
-
-
-

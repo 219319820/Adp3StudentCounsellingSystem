@@ -9,7 +9,7 @@ import za.ac.cput.entity.MentalHealth;
 
 public class MentalHealthFactory {
 
-    public static MentalHealth build(int userId,String disorderName,String disorderDesc, int counsellingBackgroundId)
+    public static MentalHealth createMentalHealth(int userId,String disorderName,String disorderDesc, int counsellingBackgroundId)
     {
 
         MentalHealth health = new MentalHealth.Builder()

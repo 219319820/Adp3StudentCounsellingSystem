@@ -12,7 +12,7 @@ public class CounsellingBackground {
     private String counsellorFirstName;
     private String counsellorLastName;
     private int counsellorPhoneNumber;
-    private Date counsellingDate;
+    private String counsellingDate;
     private String counsellingDuration;
     private String treatmentTaken;
 
@@ -25,7 +25,7 @@ public class CounsellingBackground {
         this.counsellorFirstName = builder.counsellorFirstName;
         this.counsellorLastName = builder.counsellorLastName;
         this.counsellorPhoneNumber = builder.counsellorPhoneNumber;
-        ;
+
         this.counsellingDate = builder.counsellingDate;
         this.counsellingDuration = builder.counsellingDuration;
         this.treatmentTaken = builder.treatmentTaken;
@@ -49,7 +49,7 @@ public class CounsellingBackground {
         private String counsellorFirstName;
         private String counsellorLastName;
         private int counsellorPhoneNumber;
-        private Date counsellingDate;
+        private String counsellingDate;
         private String counsellingDuration;
         private String treatmentTaken;
 
@@ -77,7 +77,7 @@ public class CounsellingBackground {
             return this;
         }
 
-        public Builder setCounsellingDate(Date counsellingDate) {
+        public Builder setCounsellingDate(String counsellingDate) {
             this.counsellingDate = counsellingDate;
 
 
