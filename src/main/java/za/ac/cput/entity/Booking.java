@@ -34,9 +34,15 @@ public class Booking {
                 '}';
     }
 
+    public String getUserId() {
+        return userId;
+    }
+
     public static class Builder{
         private String bookingId, duration, bookingTime, bookingDate, bookingType, location;
-        private int userId;
+        public int userId;
+
+
 
         public Builder setBookingId(String bookingId) {
             this.bookingId = bookingId;
@@ -89,7 +95,35 @@ public class Booking {
             return this;
         }
 
+        public String getBookingId() {
+            return bookingId;
+        }
+
+        public String getDuration() {
+            return duration;
+        }
+
+        public String getBookingTime() {
+            return bookingTime;
+        }
+
+        public String getBookingDate() {
+            return bookingDate;
+        }
+
+        public String getBookingType() {
+            return bookingType;
+        }
+
+        public String getLocation() {
+            return location;
+        }
+
+
+
+
+
     }
 
-    
+
 }
