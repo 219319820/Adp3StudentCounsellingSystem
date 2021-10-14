@@ -7,6 +7,7 @@ import java.util.Date;
 
 public class CounsellingBackground {
 
+
     //Declaration of private attributes
     private int counselingBackgroundId;
     private String counsellorFirstName;
@@ -15,7 +16,7 @@ public class CounsellingBackground {
     private String counsellingDate;
     private String counsellingDuration;
     private String treatmentTaken;
-
+    public String getCounselingBackgroundId;
 
 
     //creating the builder pattern for counselling background
@@ -43,6 +44,8 @@ public class CounsellingBackground {
                 ", treatmentTaken='" + treatmentTaken + '\'' +
                 '}';
     }
+
+
 
     public static class Builder {
         private int counselingBackgroundId;
