@@ -8,7 +8,7 @@ package za.ac.cput.entity;
  */
 public class Booking {
     private String bookingId, duration, bookingTime, bookingDate, bookingType, location;
-    private int userId;
+    private String userId;
 
 
     private Booking(Builder builder) {
@@ -34,13 +34,37 @@ public class Booking {
                 '}';
     }
 
+    public String getBookingId() {
+        return bookingId;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public String getBookingTime() {
+        return bookingTime;
+    }
+
+    public String getBookingDate() {
+        return bookingDate;
+    }
+
+    public String getBookingType() {
+        return bookingType;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
     public String getUserId() {
         return userId;
     }
 
     public static class Builder{
         private String bookingId, duration, bookingTime, bookingDate, bookingType, location;
-        public int userId;
+        public String userId;
 
 
 
@@ -54,7 +78,7 @@ public class Booking {
             return this;
         }
 
-        public Builder setUserId(int userId) {
+        public Builder setUserId(String userId) {
             this.userId = userId;
             return this;
         }
@@ -118,10 +142,6 @@ public class Booking {
         public String getLocation() {
             return location;
         }
-
-
-
-
 
     }
 
