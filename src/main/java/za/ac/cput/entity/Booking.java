@@ -34,7 +34,31 @@ public class Booking {
                 '}';
     }
 
-    public String getUserId() {
+    public String getBookingId() {
+        return bookingId;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public String getBookingTime() {
+        return bookingTime;
+    }
+
+    public String getBookingDate() {
+        return bookingDate;
+    }
+
+    public String getBookingType() {
+        return bookingType;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public int getUserId() {
         return userId;
     }
 
