@@ -5,12 +5,13 @@
  */
 package za.ac.cput.services;
 
+import za.ac.cput.entity.Role;
 import za.ac.cput.entity.UserRole;
 
 import java.util.Set;
 
 public interface IUserRoleService extends IService<UserRole, String>{
-    UserRole create(UserRole userRole);
 
     Set<UserRole> getAll();
+    public UserRole getUserRoleGivenUserId(String userId);
 }

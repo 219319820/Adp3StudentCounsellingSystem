@@ -5,16 +5,23 @@
         */
 package za.ac.cput.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
 
-public class Role {
+@Entity
+public class Role implements Serializable{
+    @Id
     private String roleId;
+    private String roleName;
     private String roleDescription;
+
 
     private Role(){
     }
     private Role(Builder builder) {
         this.roleId = builder.roleId;
+        this.roleName = builder.roleName;
         this.roleDescription = builder.roleDescription;
     }
 
@@ -22,21 +29,27 @@ public class Role {
         return roleId;
     }
 
+    public String getRoleName() {
+        return roleName;
+    }
+
     public String getRoleDescription() {
         return roleDescription;
     }
 
+
     @Override
     public String toString() {
-
         return "Role{" +
-                "roleId=" + roleId +
+                "roleId='" + roleId + '\'' +
+                ", roleName='" + roleName + '\'' +
                 ", roleDescription='" + roleDescription + '\'' +
                 '}';
     }
 
     public static class Builder {
         private String roleId;
+        private String roleName;
         private String roleDescription;
 
 
@@ -45,14 +58,20 @@ public class Role {
             return this;
         }
 
+        public Builder setRoleName(String roleName) {
+            this.roleName = roleName;
+            return this;
+        }
+
         public Builder setRoleDescription(String roleDescription){
             this.roleDescription = roleDescription;
             return this;
         }
 
-        public Builder copy(Role Role) {
-            this.roleId = Role.roleId;
-            this.roleDescription = Role.roleDescription;
+        public Builder copy(Role role) {
+            this.roleId = role.roleId;
+            this.roleName = role.roleName;
+            this.roleDescription = role.roleDescription;
             return this;
         }
         public Role build() {
