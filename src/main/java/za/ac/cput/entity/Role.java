@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 @Entity
-public class Role implements Serializable{
+public class Role {
     @Id
     private String roleId;
     private String roleName;
@@ -18,6 +18,7 @@ public class Role implements Serializable{
 
 
     private Role(){
+
     }
     private Role(Builder builder) {
         this.roleId = builder.roleId;

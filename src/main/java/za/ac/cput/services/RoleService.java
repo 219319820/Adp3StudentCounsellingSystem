@@ -41,10 +41,14 @@ public class RoleService implements IRoleService {
     @Override
     public boolean delete(String roleId) {
         this.repository.deleteById(roleId);
-        if (this.repository.existsById(roleId))
+        if (this.repository.existsById(roleId)) {
+            System.out.println("Role" + roleId + "Role not deleted");
             return false;
-        else
+        }
+        else {
+            System.out.println("Role Deleted");
             return true;
+        }
     }
     @Override
     public Set<Role> getAll() {
@@ -64,7 +68,7 @@ public class RoleService implements IRoleService {
         return r;
     }
 
-    public Set<Role> getAllRoleStartingWith() {
+    public Set<Role> getAllRoleStartingWithA() {
         Set<Role> roleWithA = new HashSet<>();
         Set<Role> roles = getAll();
         for (Role role : roles) {

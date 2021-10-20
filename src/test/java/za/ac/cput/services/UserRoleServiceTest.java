@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
 public class UserRoleServiceTest {
-    public static UserRoleService service = UserRoleService.getService();
+    public static UserRoleService service;
     public static UserRole userRole = UserRoleFactory.createUserRole("Nkanga0012");
 
     @Test
