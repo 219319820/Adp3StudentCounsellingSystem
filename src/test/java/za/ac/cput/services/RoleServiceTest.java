@@ -7,6 +7,7 @@
 package za.ac.cput.services;
 
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import za.ac.cput.entity.Role;
 import za.ac.cput.factory.RoleFactory;
 
@@ -14,8 +15,9 @@ import za.ac.cput.factory.RoleFactory;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RoleServiceTest {
-    public static RoleService service = RoleService.getService();
-    public static Role role =  RoleFactory.createRole("Psychologist");
+    @Autowired
+    public static RoleService service;
+    public static Role role =  RoleFactory.createRole("Employee", "Psychiatrist");
 
     @Test
     void a_create() {
@@ -31,13 +33,13 @@ public class RoleServiceTest {
     }
     @Test
     void c_update(){
-        Role updated = new Role.Builder().copy(role).setRoleDescription("Psychiatrist").build();
+        Role updated = new Role.Builder().copy(role).setRoleName("Employee").setRoleDescription("Psychologist").build();
         assertNotNull(service.update(updated));
         System.out.println("Update" + updated);
     }
     @Test
     void e_delete(){
-        boolean success= service.delete(role.getRoleId());
+        boolean success= service.delete("Psych2022");
         assertTrue(success);
         System.out.println("Delete: " + success);
     }

@@ -9,9 +9,11 @@ import za.ac.cput.Util.GenericHelper;
 import za.ac.cput.entity.Role;
 
 public class RoleFactory {
-    public static Role createRole(String roleDescription){
+    public static Role createRole(String roleName,String roleDescription){
         String roleId = GenericHelper.generateId();
         Role role = new Role.Builder()
+                .setRoleId(roleId)
+                .setRoleName(roleName)
                 .setRoleDescription(roleDescription)
                 .build();
         return role;

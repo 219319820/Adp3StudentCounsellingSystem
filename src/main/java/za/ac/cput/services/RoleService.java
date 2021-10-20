@@ -5,47 +5,78 @@
  */
 package za.ac.cput.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import za.ac.cput.entity.Role;
 import za.ac.cput.repository.RoleRepository;
-import java.util.Set;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+@Service
 public class RoleService implements IRoleService {
     private static RoleService service = null;
-    private RoleRepository repository = null;
 
-    private RoleService() {
-        this.repository = RoleRepository.getRepository();
-    }
-    public static RoleService getService(){
-        if(service == null){
-            service = new RoleService();
-        }
-        return service;
-    }
-
-    @Override
-    public Set<Role> getAll() {
-        return this.repository.getAll();
-    }
+    @Autowired
+    private RoleRepository repository;
 
     @Override
     public Role create(Role role) {
-        return this.repository.create(role);
+        return this.repository.save(role);
     }
 
     @Override
     public Role read(String roleId) {
-        return this.repository.read(roleId);
+        return this.repository.findById(roleId).orElse(null);
     }
 
     @Override
     public Role update(Role role) {
-        return this.repository.update(role);
+        if (this.repository.existsById(role.getRoleId()))
+            return this.repository.save(role);
+        return null;
     }
 
     @Override
     public boolean delete(String roleId) {
-        return this.repository.delete(roleId);
+        this.repository.deleteById(roleId);
+        if (this.repository.existsById(roleId)) {
+            System.out.println("Role" + roleId + "Role not deleted");
+            return false;
+        }
+        else {
+            System.out.println("Role Deleted");
+            return true;
+        }
+    }
+    @Override
+    public Set<Role> getAll() {
+        return this.repository.findAll().stream().collect(Collectors.toSet());
+    }
+
+    @Override
+    public Role getRoleGivenDescription(String roleDescription) {
+        Role r = null;
+        Set<Role>roles = getAll();
+        for(Role role : roles){
+            if(role.getRoleDescription().equals(roleDescription)){
+                r = role;
+                break;
+            }
+        }
+        return r;
+    }
+
+    public Set<Role> getAllRoleStartingWithA() {
+        Set<Role> roleWithA = new HashSet<>();
+        Set<Role> roles = getAll();
+        for (Role role : roles) {
+            if (role.getRoleDescription().trim().toLowerCase().startsWith("a")) {
+                roleWithA.add(role);
+            }
+        }
+return roleWithA;
     }
 }
 

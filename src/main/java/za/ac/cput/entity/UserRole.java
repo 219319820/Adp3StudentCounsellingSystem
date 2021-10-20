@@ -6,6 +6,8 @@
 
 package za.ac.cput.entity;
 
+import java.io.Serializable;
+
 public class UserRole {
     private String roleId;
     private String userId;
